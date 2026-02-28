@@ -176,7 +176,7 @@
     display: none !important;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .mobile-only {
         display: block !important;
     }
