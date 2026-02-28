@@ -1,0 +1,106 @@
+.search-page {
+    min-height: 60vh;
+}
+
+.search-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+}
+
+.search-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.search-input-container .search-icon {
+    position: absolute;
+    left: 1.5rem;
+    color: var(--color-text-light);
+}
+
+.search-input-container input {
+    width: 100%;
+    padding: 1.2rem 1.5rem 1.2rem 3.5rem;
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+    border: 2px solid var(--color-border);
+    border-radius: 999px;
+    outline: none;
+    transition: all 0.3s ease;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.search-input-container input:focus {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+}
+
+.results-count {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.no-results {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    border: 1px dashed var(--color-border);
+}
+
+.no-results p {
+    color: var(--color-text-light);
+    margin-bottom: 0.5rem;
+}
+
+.search-suggestions {
+    margin-top: 2rem;
+}
+
+.search-suggestions h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.suggestion-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color-text);
+    transition: transform 0.3s ease;
+}
+
+.suggestion-card:hover {
+    transform: translateY(-5px);
+}
+
+.suggestion-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    box-shadow: var(--shadow-sm);
+    border: 3px solid var(--color-white);
+}
+
+.suggestion-card span {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .suggestion-card img {
+        width: 100px;
+        height: 100px;
+    }
+}

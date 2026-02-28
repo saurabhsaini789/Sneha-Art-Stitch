@@ -14,6 +14,7 @@ import Tailoring from './pages/Tailoring';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Policy from './pages/Policy';
+import SearchPage from './pages/SearchPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/shop" element={<Shop />} />
+            <Route path="/search" element={<SearchPage />} />
             <Route path="/category/:slug" element={<Category />} />
             <Route path="/product/:slug" element={<ProductDetail />} />
             <Route path="/custom-orders" element={<CustomOrders />} />
